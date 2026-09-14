@@ -566,9 +566,24 @@ body {
     padding: calc(var(--nav-height) + 2.5rem) 5% 5rem;
   }
 
+  .hero-eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 6vw, 2.2rem);
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
   .hero-actions .hero-btn {
     flex: 1 1 100%;
     text-align: center;
+    padding: 1rem 2rem;
   }
 
   .hero-img-frame {
@@ -589,11 +604,185 @@ body {
     bottom: 5%;
     right: 2%;
   }
+
+  .section-eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    line-height: 1.2;
+  }
+
+  .about {
+    padding: 4rem 5%;
+  }
+
+  .about-desc {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .info-label {
+    font-size: 0.7rem;
+  }
+
+  .info-value {
+    font-size: 0.9rem;
+  }
+
+  .projects {
+    padding: 4rem 5%;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-desc {
+    font-size: 0.85rem;
+  }
+
+  .project-category {
+    font-size: 0.72rem;
+  }
+
+  .project-page {
+    padding: 4rem 5%;
+  }
+
+  .services {
+    padding: 4rem 5%;
+  }
+
+  .service-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .service-card p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .experience-company {
+    font-size: 1rem;
+  }
+
+  .experience-role {
+    font-size: 0.85rem;
+  }
+
+  .expertise {
+    padding: 4rem 5%;
+  }
+
+  .skill-name,
+  .skill-value {
+    font-size: 0.9rem;
+  }
+
+  .contact {
+    padding: 4rem 5%;
+  }
+
+  .contact-desc {
+    font-size: 0.95rem;
+  }
+
+  .contact-label {
+    font-size: 0.7rem;
+  }
+
+  .contact-value {
+    font-size: 0.9rem;
+  }
+
+  .btn-ghost {
+    padding: 0.75rem 1.5rem;
+    min-height: 44px;
+  }
+
+  .btn-cta {
+    padding: 0.75rem 1.5rem;
+    min-height: 44px;
+  }
+
+  .social-link {
+    width: 48px;
+    height: 48px;
+  }
+
+  .project-link {
+    padding: 0.5rem 0;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .dropdown-link {
+    padding: 0.75rem 1rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-links a {
+    padding: 0.5rem 0;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom span {
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
 
 @media (max-height: 640px) {
   .scroll-indicator {
     display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-chip.available {
+    top: 2%;
+    left: 0;
+    font-size: 0.65rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .hero-chip.experience {
+    bottom: 2%;
+    right: 0;
+    font-size: 0.65rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .hero-img-frame {
+    width: min(100%, 240px);
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
   }
 }
 
@@ -977,6 +1166,33 @@ section {
 
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .project-media {
+    aspect-ratio: 16 / 9;
+  }
+
+  .project-media img {
+    object-fit: cover;
+  }
+
+  .project-body {
+    padding: 1.25rem;
+  }
+
+  .project-tags {
+    gap: 0.4rem;
+  }
+
+  .project-tags span {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .project-page-hero img {
+    object-fit: cover;
+    max-height: 300px;
   }
 }
 
@@ -1462,11 +1678,35 @@ section {
 @media (max-width: 640px) {
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .block-title {
+    font-size: 1.1rem;
+  }
+
+  .journey {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
   }
 
   .experience-item {
     flex-direction: column;
     align-items: flex-start;
+    padding: 1.2rem 0;
+  }
+
+  .experience-date {
+    margin-top: 0.5rem;
   }
 
   .journey-timeline {
@@ -1492,6 +1732,19 @@ section {
     left: -1.85rem;
     right: auto;
     transform: translateX(-50%);
+  }
+
+  .journey-caption strong {
+    font-size: 0.85rem;
+  }
+
+  .journey-caption em {
+    font-size: 0.75rem;
+  }
+
+  .journey-caption-icon {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -1887,9 +2140,32 @@ a.contact-value:hover {
     grid-template-columns: 1fr;
   }
 
+  .form-group input,
+  .form-group textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    min-height: 48px;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
   .contact-form .btn-cta {
     width: 100%;
     text-align: center;
+    padding: 1rem;
+    min-height: 48px;
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .contact-item {
+    padding: 1rem 0;
   }
 
   .footer-top {
@@ -1904,5 +2180,10 @@ a.contact-value:hover {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer-top-btn {
+    width: 48px;
+    height: 48px;
   }
 }

@@ -43,7 +43,7 @@ const caseStudies = {
   mediafeed: {
     title: 'MediaFeed <span class="text-gradient">Platform</span>',
     desc: "A dynamic media-sharing application with simulated user authentication, integrated audio playback, and a responsive photo gallery.",
-    image: "assets/mediafeed.png",
+    image: "assets/mediafeed.webp",
     imageAlt: "MediaFeed Platform interface",
     live: "https://media-feed-ten.vercel.app/",
     code: "https://github.com/Rayno-0x",
@@ -251,7 +251,7 @@ contactForm.addEventListener("submit", async (e) => {
     const json = await res.json();
 
     if (res.status === 200 && json.success) {
-      formStatus.textContent = "Thanks! Your message has been sent — I'll get back to you soon.";
+      formStatus.textContent = "Thanks! Your message has been sent. I'll get back to you soon.";
       formStatus.className = "form-status success";
       contactForm.reset();
     } else {

@@ -3,7 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Motun Portfolio</title>
+    <title>Motunrayo Adeyemo | Software Developer & Designer</title>
+    <meta name="description" content="Portfolio of Motunrayo Adeyemo — a software developer and designer crafting clean, responsive web experiences with HTML, CSS, JavaScript, and Django." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Motunrayo Adeyemo | Software Developer & Designer" />
+    <meta property="og:description" content="Crafting digital experiences that inspire. View my projects, skills, and get in touch." />
+    <meta property="og:image" content="assets/profile_img.png" />
+    <meta property="og:url" content="https://portfolio-page-five-roan.vercel.app/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Motunrayo Adeyemo | Software Developer & Designer" />
+    <meta name="twitter:description" content="Crafting digital experiences that inspire. View my projects, skills, and get in touch." />
+    <meta name="twitter:image" content="assets/profile_img.png" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -145,13 +160,16 @@
           </div>
           <div class="hero-visual">
             <div class="hero-img-frame">
-              <img src="assets/profile_img.png" alt="Portrait of Motun" />
+              <picture>
+                <source srcset="assets/profile_img.webp" type="image/webp" />
+                <img src="assets/profile_img.png" alt="Portrait of Motun" />
+              </picture>
             </div>
             <div class="hero-chip available">
               <!-- <span class="status-dot"></span> -->
               Available for work
             </div>
-            <div class="hero-chip experience">Junior Software Developer</div>
+            <div class="hero-chip experience">Software Developer</div>
           </div>
         </div>
         <a href="#about" class="scroll-indicator" aria-label="Scroll down">
@@ -316,10 +334,14 @@
                   );
                 "
               >
-                <img
-                  src="assets/mediafeed.png"
-                  alt="MediaFeed Dashboard preview"
-                />
+                <picture>
+                  <source srcset="assets/mediafeed.webp" type="image/webp" />
+                  <img
+                    src="assets/mediafeed.png"
+                    alt="MediaFeed Dashboard preview"
+                    loading="lazy"
+                  />
+                </picture>
                 <span class="project-pill">Web App</span>
                 <span class="project-badge">
                   <svg
@@ -661,7 +683,7 @@
               </div>
               <div class="journey-timeline">
                 <figure class="journey-step">
-                  <img src="assets/gdg.jpg" alt="Attending a GDG event" />
+                  <img src="assets/gdg.jpg" alt="Attending a GDG event" loading="lazy" />
                   <figcaption class="journey-caption">
                     <span class="journey-caption-icon">
                       <svg
@@ -689,6 +711,7 @@
                   <img
                     src="assets/hackaton2.jpg"
                     alt="Presenting our solution at the hackathon"
+                    loading="lazy"
                   />
                   <figcaption class="journey-caption">
                     <span class="journey-caption-icon">
@@ -717,6 +740,7 @@
                   <img
                     src="assets/hackaton.jpeg"
                     alt="With my team at the WEMA Hackathon"
+                    loading="lazy"
                   />
                   <figcaption class="journey-caption">
                     <span class="journey-caption-icon">
